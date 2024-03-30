@@ -1,4 +1,4 @@
-import * as ortInstance from "onnxruntime-web"
+import * as ort from "onnxruntime-web"
 import {
   log,
   Message,
@@ -64,8 +64,6 @@ interface RealTimeVADOptionsWithStream
     AssetOptions {
   stream: MediaStream
 }
-
-export const ort = ortInstance
 
 export type RealTimeVADOptions =
   | RealTimeVADOptionsWithStream
