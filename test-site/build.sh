@@ -20,3 +20,11 @@ cp \
     node_modules/@ricky0123/vad-web/dist/vad.worklet.bundle.min.js \
     node_modules/onnxruntime-web/dist/*.wasm \
     test-site/dist
+
+# Assets files custom folder
+mkdir test-site/dist/subpath
+cp \
+    node_modules/@ricky0123/vad-web/dist/*.onnx \
+    node_modules/@ricky0123/vad-web/dist/vad.worklet.bundle.min.js \
+    node_modules/onnxruntime-web/dist/*.wasm \
+    test-site/dist/subpath
